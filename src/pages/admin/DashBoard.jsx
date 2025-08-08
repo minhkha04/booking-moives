@@ -56,7 +56,7 @@ const DashBoard = () => {
         <div className={'flex flex-wrap gap-4 w-full'}>
           {dashboardCards.map((card, index) => (
             <div key={index}
-                 className={'flex items-center justify-between px-4 py-3 bg-primary/10 border border-primary rounded-md max-w-50 w-full'}>
+                 className={'flex items-center justify-between px-4 py-3 bg-primary/10 border border-primary rounded-md max-w-96 w-full'}>
               <div>
                 <h1 className={'text-sm'}>{card.title}</h1>
                 <p className={'text-xl font-medium mt-1'}>{card.value}</p>
@@ -67,7 +67,7 @@ const DashBoard = () => {
         </div>
       </div>
       <p className={'mt-10 text-lg font-medium'}>Actives Shows</p>
-      <div className={'relative flex flex-wrap gap-6 mt-4 max-w-5xl'}>
+      <div className={'relative flex flex-wrap gap-6 mt-4'}>
         <BlurCircle top={'100px'} left={'-10px'}/>
         {dashboardData.activeShows.map((show) => (
           <div key={show._id}
